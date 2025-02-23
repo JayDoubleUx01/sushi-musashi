@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Sushi Musashi</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo image">
+                Sushi Musashi
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">Strona główna</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link active-link">Menu</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+                <img src="assets/img/leaf-branch-4.png" alt="nav image" class="nav__img-1">
+                <img src="assets/img/leaf-branch-3.png" alt="nav image" class="nav__img-2">
+            </div>
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="menu">
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Nigiri
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Łosoś</h3>
+                    <span class="popular__description">
+                        Kulka ryżowa, wasabi
+                    </span>
+                    <span class="popular__price">16 zł/2 szt.</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Krewetka</h3>
+                    <span class="popular__description">
+                        Kulka ryżowa, wasabi
+                    </span>
+                    <span class="popular__price">18zł/2 szt.</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Hosomaki
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Ogórek</h3>
+                    <span class="popular__description">
+                    </span>
+                    <span class="popular__price">12 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Kanpyo</h3>
+                    <span class="popular__description">
+                        Tykwa marynowana
+                    </span>
+                    <span class="popular__price">12 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Oshinko</h3>
+                    <span class="popular__description">
+                        Rzepa marynowana
+                    </span>
+                    <span class="popular__price">12 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Łosoś surowy</h3>
+                    <span class="popular__description">
+                    </span>
+                    <span class="popular__price">15 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Łosoś grillowany</h3>
+                    <span class="popular__description">
+                    </span>
+                    <span class="popular__price">16 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Krewetka gotowana</h3>
+                    <span class="popular__description">
+                    </span>
+                    <span class="popular__price">17 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado</h3>
+                    <span class="popular__description">
+                    </span>
+                    <span class="popular__price">14 zł</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Futomaki
+            </h2>
+            <span class="section__subtitle">
+                Łosoś
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">44 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy
+                    </span>
+                    <span class="popular__price">44 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mustard Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Musztarda japońska
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+            </div>
+            <span class="section__subtitle">
+                Kurczak
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany w teryiaki <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany w teryiaki <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Grilled Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany w teryiaki <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mustard Grilled Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany w teryiaki <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Musztarda japońska
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany w teryiaki <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+            </div>
+            <span class="section__subtitle">
+                Krewetka
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mustard Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Musztarda japońska
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mango Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Mango <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">48 zł</span>
+                </article>
+            </div>
+            <span class="section__subtitle">
+                Marchew w tempurze
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Carrot Roll</h3>
+                    <span class="popular__description">
+                        Marchew w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Carrot Roll</h3>
+                    <span class="popular__description">
+                        Marchew w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Carrot Roll</h3>
+                    <span class="popular__description">
+                        Marchew w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Carrot Roll</h3>
+                    <span class="popular__description">
+                        Marchew w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mango Carrot Roll</h3>
+                    <span class="popular__description">
+                        Marchew w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Mango <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">42 zł</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Uramaki
+            </h2>
+            <span class="section__subtitle">
+                Łosoś
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek śmietankowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mustard Grilled Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Musztarda japońska<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Green Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Szczypiorek siekany
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Flipped Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś opalany <i>(na rolce)</i> <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">46 zł</span>
+                </article>
+            </div>
+            <span class="section__subtitle">
+                Kurczak
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Grilled Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Mustard Grilled Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Musztarda japońska<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Green Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Szczypiorek siekany
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Kiwi Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Kiwi <i>(na rolce)</i>
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+            </div>
+            <span class="section__subtitle">
+                Krewetka
+            </span>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Classic Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Awokado Classic Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Awokado <br> Serek
+                        śmietankowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Spicy Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Pikantny sos majonezowy<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Wasabi Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko
+                        <i>(rzepa marynowana)</i> <br> Serek wasabi<br> Sezam prażony biały i czarny
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Green Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Szczypiorek siekany
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Kiwi Shrimp Roll</h3>
+                    <span class="popular__description">
+                        Krewetka w tempurze <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy <br> Kiwi <i>(na rolce)</i>
+                    </span>
+                    <span class="popular__price">49 zł</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Tempura Maki
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Salmon Roll</h3>
+                    <span class="popular__description">
+                        Łosoś surowy <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">45 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Tempura Chicken Roll</h3>
+                    <span class="popular__description">
+                        Kurczak grillowany <br> Ogórek zielony <br> Kanpyo <i>(tykwa marynowana)</i> <br> Oshinko <i>(rzepa
+                            marynowana)</i> <br> Serek śmietankowy
+                    </span>
+                    <span class="popular__price">43 zł</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Sweet Rolls
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Mango</h3>
+                    <span class="popular__description">
+                        Mięta, krem czekoladowy, ryż
+                    </span>
+                    <span class="popular__price">24 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Banan</h3>
+                    <span class="popular__description">
+                        Mięta, krem czekoladowy, ryż
+                    </span>
+                    <span class="popular__price">22 zł</span>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Kiwi</h3>
+                    <span class="popular__description">
+                        Mięta, krem czekoladowy, ryż
+                    </span>
+                    <span class="popular__price">22 zł</span>
+                </article>
+            </div>
+            <h2 class="section__title">
+                Zupy
+            </h2>
+            <div class="popular__container container grid">
+                <article class="popular__card">
+                    <h3 class="popular name">Zupa tajska <br> (łagodna)</h3>
+                    <span class="popular__description">
+                        450 ml
+                    </span>
+                    <div class="dish_version">
+                        <span class="popular__version">
+                            z kurczakiem
+                        </span>
+                        <span class="popular__version__price">20 zł
+                        </span>
+                    </div>
+                    <div class="dish_version">
+                        <span class="popular__version">
+                            z krewetką
+                        </span>
+                        <span class="popular__version__price">24 zł</span>
+                    </div>
+                </article>
+                <article class="popular__card">
+                    <h3 class="popular name">Zupa tajska <br> (ostra)</h3>
+                    <span class="popular__description">
+                        450 ml
+                    </span>
+                    <div class="dish_version">
+                        <span class="popular__version">
+                            z kurczakiem
+                        </span>
+                        <span class="popular__version__price">20 zł
+                        </span>
+                    </div>
+                    <div class="dish_version">
+                        <span class="popular__version">
+                            z krewetką
+                        </span>
+                        <span class="popular__version__price">24 zł</span>
+                </article>
+            </div>
+        </section>
+    </main>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
